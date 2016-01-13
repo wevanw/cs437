@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Dashboard</title>
+
+<!-- Custom Fonts -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"
+	type="text/css">
+<link rel="stylesheet" href="css/appstore.css" type="text/css">
+<link href="css/sb-admin.css" rel="stylesheet">
+<link href="css/plugins/morris.css" rel="stylesheet">
+
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script
+	src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<!-- Navbar -->
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<i class="fa fa-fighter-jet fa-3x fa-fw pull-left icon"></i> <a
+					class="navbar-brand pull-left" href="Dashboard.html"><span
+					class="text-primary .brand">GovAppStore</span>&nbsp;&nbsp;Developer
+					Console</a>
+			</div>
+
+			<!-- Message preview -->
+			<ul class="nav navbar-right top-nav">
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown"> <i class="fa fa-envelope"></i> <b
+						class="caret"></b>
+				</a>
+					<ul class="dropdown-menu message-dropdown">
+						<li class="message-preview"><a href="#">
+								<div class="media">
+									<span class="pull-left"> <img class="media-object"
+										src="http://placehold.it/50x50" alt=""></span>
+									<div class="media-body">
+										<h5 class="media-heading">
+											<strong>Admin</strong>
+										</h5>
+										<p class="small text-muted">
+											<i class="fa fa-clock-o"></i> Yesterday at 4:32 PM
+										</p>
+										<p>Lorem ipsum dolor sit amet, consectetur...</p>
+									</div>
+								</div>
+						</a></li>
+						<li class="message-preview"><a href="#">
+								<div class="media">
+									<span class="pull-left"> <img class="media-object"
+										src="http://placehold.it/50x50" alt=""></span>
+									<div class="media-body">
+										<h5 class="media-heading">
+											<strong>Admin</strong>
+										</h5>
+										<p class="small text-muted">
+											<i class="fa fa-clock-o"></i> Yesterday at 4:32 PM
+										</p>
+										<p>Lorem ipsum dolor sit amet, consectetur...</p>
+									</div>
+								</div>
+						</a></li>
+						<li class="message-preview"><a href="#">
+								<div class="media">
+									<span class="pull-left"> <img class="media-object"
+										src="http://placehold.it/50x50" alt=""></span>
+									<div class="media-body">
+										<h5 class="media-heading">
+											<strong>Admin</strong>
+										</h5>
+										<p class="small text-muted">
+											<i class="fa fa-clock-o"></i> Yesterday at 4:32 PM
+										</p>
+										<p>Lorem ipsum dolor sit amet, consectetur...</p>
+									</div>
+								</div>
+						</a></li>
+						<li class="message-footer"><a href="Messages.html">Read
+								All New Messages</a></li>
+						<li class="message-footer"><a href="" data-toggle="modal"
+							data-target="#new-ms-modal">Create Message</a></li>
+					</ul></li>
+				<!-- Name Dropdown -->
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown"><i class="fa fa-user"></i> John Doe <b
+						class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href=""><i
+								class="fa fa-fw fa-dashboard"></i> Profile</a></li>
+						<li><a href="Messages.html"><i
+								class="fa fa-fw fa-envelope"></i> Inbox</a></li>
+						<li><a href="Settings.html"><i class="fa fa-fw fa-gear"></i>
+								Settings</a></li>
+						<li class="divider"></li>
+						<li><a href="Login.html"><i class="fa fa-fw fa-power-off"></i>
+								LogOut</a></li>
+					</ul></li>
+			</ul>
+
+			<!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav side-nav">
+					<li class="active"><a href="Dashboard.html"><i
+							class="fa fa-fw fa-dashboard"></i> Dashboard</a></li>
+					<li><a href="MyApps.html"><i class="fa fa-fw fa-tablet"></i>
+							MyApps</a></li>
+					<li><a href="Forms.html"><i class="fa fa-fw fa-edit"></i>
+							Forms</a></li>
+					<li><a href=""><i class="fa fa-fw fa-terminal"></i>
+							Developer Sandbox</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- /.navbar-collapse -->
+		<div id="page-wrapper">
+			<div class="container-fluid">
+				<!--<div class="row">
+						<div class="col-lg-12">
+							<div class="alert alert-info alert-dismissable">
+								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+								<i class="fa fa-info-circle"></i> <strong>System will be down for maintanance!</strong>
+							</div>
+						</div>
+					</div>-->
+
+				<!-- Page Heading -->
+				<div class="row">
+					<div class="col-lg-12">
+						<ol class="breadcrumb">
+							<li class="active"><i class="fa fa-dashboard"></i> Dashboard</li>
+						</ol>
+						<h1 class="page-header">
+							Dashboard <small>Statistics Overview</small>
+						</h1>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<div class="row">
+									<div class="col-xs-3">
+										<i class="fa fa-comments fa-5x"></i>
+									</div>
+									<div class="col-xs-9 text-right">
+										<div class="huge">26</div>
+										<div>New Comments!</div>
+									</div>
+								</div>
+							</div>
+							<a href="Comments.html">
+								<div class="panel-footer">
+									<span class="pull-left">View Details</span> <span
+										class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+									<div class="clearfix"></div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<div class="row">
+									<div class="col-xs-3">
+										<i class="fa fa-envelope fa-5x"></i>
+									</div>
+									<div class="col-xs-9 text-right">
+										<div class="huge">12</div>
+										<div>New Messages!</div>
+									</div>
+								</div>
+							</div>
+							<a href="Messages.html">
+								<div class="panel-footer">
+									<span class="pull-left">View Details</span> <span
+										class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+									<div class="clearfix"></div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<div class="row">
+									<div class="col-xs-3">
+										<i class="fa fa-download fa-5x"></i>
+									</div>
+									<div class="col-xs-9 text-right">
+										<div class="huge">124</div>
+										<div>Customer Downloads!</div>
+									</div>
+								</div>
+							</div>
+							<a href="MyApps.html">
+								<div class="panel-footer">
+									<span class="pull-left">View Details</span> <span
+										class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+									<div class="clearfix"></div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<div class="row">
+									<div class="col-xs-3">
+										<i class="fa fa-check-square fa-5x"></i>
+									</div>
+									<div class="col-xs-9 text-right">
+										<div class="huge">13</div>
+										<div>Approved Apps!</div>
+									</div>
+								</div>
+							</div>
+							<a href="MyApps.html">
+								<div class="panel-footer">
+									<span class="pull-left">View Details</span> <span
+										class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+									<div class="clearfix"></div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Bar Chart -->
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title">
+									<i class="fa fa-bar-chart-o fa-fw"></i> Top Three App Downloads
+								</h3>
+							</div>
+							<div class="panel-body">
+								<div id="morris-area-chart"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="row">
+					<!-- Donut Chart -->
+					<div class="col-lg-4">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title">
+									<i class="fa fa-long-arrow-right fa-fw"></i> Downloads by
+									Category
+								</h3>
+							</div>
+							<div class="panel-body">
+								<div id="morris-donut-chart"></div>
+								<div class="text-right">
+									<a href="">View Details <i class="fa fa-arrow-circle-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Notifications -->
+					<div class="col-lg-4">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title">
+									<i class="fa fa-bell fa-fw"></i> Notifications
+								</h3>
+							</div>
+							<div class="panel-body">
+								<div class="list-group">
+									<a href="#" class="list-group-item"> <span class="badge">just
+											now</span> <i class="fa fa-fw fa-check-square"></i> App53 approved
+									</a> <a href="#" class="list-group-item"> <span class="badge">4
+											minutes ago</span> <i class="fa fa-fw fa-comment"></i> New comment
+										for app2
+									</a> <a href="#" class="list-group-item"> <span class="badge">23
+											minutes ago</span> <i class="fa fa-fw fa-check-square"></i> App51
+										approved
+									</a> <a href="#" class="list-group-item"> <span class="badge">46
+											minutes ago</span> <i class="fa fa-fw fa-comment"></i> New comment
+										for app4
+									</a> <a href="#" class="list-group-item"> <span class="badge">1
+											hour ago</span> <i class="fa fa-fw fa-user"></i> user1 is following
+										you
+									</a> <a href="#" class="list-group-item"> <span class="badge">2
+											hours ago</span> <i class="fa fa-fw fa-check-square"></i> app90 was
+										not approved
+									</a> <a href="#" class="list-group-item"> <span class="badge">yesterday</span>
+										<i class="fa fa-fw fa-user"></i> user200 is following you
+									</a> <a href="#" class="list-group-item"> <span class="badge">two
+											days ago</span> <i class="fa fa-fw fa-comment"></i> New comment for
+										app8
+									</a>
+								</div>
+								<div class="text-right">
+									<a href="#">View All Activity <i
+										class="fa fa-arrow-circle-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Downloads -->
+					<div class="col-lg-4">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title">
+									<i class="fa fa-download fa-fw"></i> Download Panel
+								</h3>
+							</div>
+							<div class="panel-body">
+								<div class="table-responsive">
+									<table class="table table-bordered table-hover table-striped">
+										<thead>
+											<tr>
+												<th>App Name</th>
+												<th>Download Date</th>
+												<th>Download Time</th>
+												<th>Client ID</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>App1</td>
+												<td>10/21/2013</td>
+												<td>3:29 PM</td>
+												<td>1</td>
+											</tr>
+											<tr>
+												<td>App1</td>
+												<td>10/21/2013</td>
+												<td>3:20 PM</td>
+												<td>2</td>
+											</tr>
+											<tr>
+												<td>App2</td>
+												<td>10/21/2013</td>
+												<td>3:03 PM</td>
+												<td>3</td>
+											</tr>
+											<tr>
+												<td>App3</td>
+												<td>10/21/2013</td>
+												<td>3:00 PM</td>
+												<td>4</td>
+											</tr>
+											<tr>
+												<td>App4</td>
+												<td>10/21/2013</td>
+												<td>2:49 PM</td>
+												<td>5</td>
+											</tr>
+											<tr>
+												<td>App4</td>
+												<td>10/21/2013</td>
+												<td>2:23 PM</td>
+												<td>6</td>
+											</tr>
+											<tr>
+												<td>App15</td>
+												<td>10/21/2013</td>
+												<td>2:15 PM</td>
+												<td>7</td>
+											</tr>
+											<tr>
+												<td>App15</td>
+												<td>10/21/2013</td>
+												<td>2:15 PM</td>
+												<td>8</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="text-right">
+									<a href="#">View All Downloads <i
+										class="fa fa-arrow-circle-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- New Message Modal -->
+				<div class="modal fade modal-z" id="new-ms-modal" tabindex="-1"
+					role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close btn btn-lg btn-primary"
+									data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<h3 class="modal-title">New Message</h3>
+							</div>
+							<div class="modal-body">
+								<form action="Dashboard.html" method="post">
+									<div class="row">
+										<div class="form-group">
+											<div class="col-md-1">
+												<strong>From:</strong>
+											</div>
+											<div class="col-md-11">
+												<p>John Doe</p>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group">
+											<div class="col-md-1">
+												<label for="receiver">To:</label>
+											</div>
+											<div class="col-md-11">
+												<input class="form-control" type="text" name="receiver" />
+											</div>
+										</div>
+									</div>
+									<br>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group">
+												<textarea class="form-control" rows="4" cols="50"
+													placeholder="Enter message."></textarea>
+											</div>
+										</div>
+									</div>
+									<button type="submit" class="btn btn-primary">Send</button>
+									<button type="button" class="btn btn-primary"
+										data-dismiss="modal">Close</button>
+								</form>
+							</div>
+						</div>
+						<!-- /.modal-content -->
+					</div>
+					<!-- /.modal-dialog -->
+				</div>
+				<!-- /.modal -->
+			</div>
+			<!-- /.container-fluid -->
+		</div>
+		<!-- /#page-wrapper -->
+	</div>
+	<!-- /#wrapper -->
+
+	<!-- jQuery -->
+	<script src="js/jquery.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Morris Charts JavaScript -->
+	<script src="js/plugins/morris/raphael.min.js"></script>
+	<script src="js/plugins/morris/morris.min.js"></script>
+	<script src="js/plugins/morris/morris-data.js"></script>
+
+</body>
+<footer>
+	<div class="jumbotron jumbotron-footer">
+		<div class="row">
+			<div class="container">
+				<div class="col-md-3">
+					<ul>
+						<li><h3>Connect</h3></li>
+						<li><a href=""><i class="fa fa-github fa-fw"></i> Github</a></li>
+						<li><a href=""><i class="fa fa-facebook fa-fw"></i>
+								Facebook</a></li>
+						<li><a href=""><i class="fa fa-google-plus fa-fw"></i>
+								Google+</a></li>
+						<li><a href=""><i class="fa fa-twitter fa-fw"></i>
+								Twitter</a></li>
+						<li><a href=""><i class="fa fa-youtube fa-fw"></i>
+								Youtube</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul>
+						<li><h3>Programs</h3></li>
+						<li><a href="">GovAppStore Developer Groups</a></li>
+						<li><a href="">GovAppStore Developer Experts</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul>
+						<li><h3>Consoles</h3></li>
+						<li><a href="">GovAppStore App Store Console</a></li>
+						<li><a href="">GovAppStore Developer Console</a></li>
+						<li><a href="">GovAppStore Administrator Console</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul>
+						<li><h3>Explore</h3></li>
+						<li><a href=""><i class="fa fa-android fa-fw"></i>
+								Android</a></li>
+						<li><a href=""><i class="fa fa-apple fa-fw"></i> iOS</a></li>
+						<li><a href=""><i class="fa fa-globe fa-fw"></i> Web</a></li>
+						<li><a href=""><i class="fa fa-gamepad fa-fw"></i> All
+								Products</a></li>
+						<li><a href=""><i class="fa fa-group fa-fw"></i> Careers</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12 footer">
+			<a href="">Terms of Use</a> | <a href="">Privacy Policy</a>
+		</div>
+	</div>
+</footer>
+</html>

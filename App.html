@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>The Official U.S. Navy App</title>
+
+<link href="css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"
+	type="text/css">
+<link rel="stylesheet" href="css/appstore.css" type="text/css">
+<link href="css/sb-admin.css" rel="stylesheet">
+<link href="css/plugins/morris.css" rel="stylesheet">
+
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script
+	src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<!-- Navbar -->
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<i class="fa fa-fighter-jet fa-3x fa-fw pull-left icon"></i> <a
+					class="navbar-brand pull-left" href="Dashboard.html"><span
+					class="text-primary .brand">GovAppStore</span>&nbsp;&nbsp;Developer
+					Console</a>
+			</div>
+
+			<!-- Message preview -->
+			<ul class="nav navbar-right top-nav">
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown"> <i class="fa fa-envelope"></i> <b
+						class="caret"></b>
+				</a>
+					<ul class="dropdown-menu message-dropdown">
+						<li class="message-preview"><a href="#">
+								<div class="media">
+									<span class="pull-left"> <img class="media-object"
+										src="http://placehold.it/50x50" alt=""></span>
+									<div class="media-body">
+										<h5 class="media-heading">
+											<strong>Admin</strong>
+										</h5>
+										<p class="small text-muted">
+											<i class="fa fa-clock-o"></i> Yesterday at 4:32 PM
+										</p>
+										<p>Lorem ipsum dolor sit amet, consectetur...</p>
+									</div>
+								</div>
+						</a></li>
+						<li class="message-preview"><a href="#">
+								<div class="media">
+									<span class="pull-left"> <img class="media-object"
+										src="http://placehold.it/50x50" alt=""></span>
+									<div class="media-body">
+										<h5 class="media-heading">
+											<strong>Admin</strong>
+										</h5>
+										<p class="small text-muted">
+											<i class="fa fa-clock-o"></i> Yesterday at 4:32 PM
+										</p>
+										<p>Lorem ipsum dolor sit amet, consectetur...</p>
+									</div>
+								</div>
+						</a></li>
+						<li class="message-preview"><a href="#">
+								<div class="media">
+									<span class="pull-left"> <img class="media-object"
+										src="http://placehold.it/50x50" alt=""></span>
+									<div class="media-body">
+										<h5 class="media-heading">
+											<strong>Admin</strong>
+										</h5>
+										<p class="small text-muted">
+											<i class="fa fa-clock-o"></i> Yesterday at 4:32 PM
+										</p>
+										<p>Lorem ipsum dolor sit amet, consectetur...</p>
+									</div>
+								</div>
+						</a></li>
+						<li class="message-footer"><a href="Messages.html">Read
+								All New Messages</a></li>
+						<li class="message-footer"><a href="" data-toggle="modal"
+							data-target="#new-ms-modal">Create Message</a></li>
+					</ul></li>
+
+				<!-- Name Dropdown -->
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown"><i class="fa fa-user"></i> John Doe <b
+						class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href=""><i
+								class="fa fa-fw fa-dashboard"></i> Profile</a></li>
+						<li><a href="Messages.html"><i
+								class="fa fa-fw fa-envelope"></i> Inbox</a></li>
+						<li><a href="Settings.html"><i class="fa fa-fw fa-gear"></i>
+								Settings</a></li>
+						<li class="divider"></li>
+						<li><a href="Login.html"><i class="fa fa-fw fa-power-off"></i>
+								LogOut</a></li>
+					</ul></li>
+			</ul>
+
+			<!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav side-nav">
+					<li><a href="Dashboard.html"><i
+							class="fa fa-fw fa-dashboard"></i> Dashboard</a></li>
+					<li><a href="MyApps.html"><i class="fa fa-fw fa-tablet"></i>
+							MyApps</a></li>
+					<li><a href="Forms.html"><i class="fa fa-fw fa-edit"></i>
+							Forms</a></li>
+					<li><a href=""><i class="fa fa-fw fa-terminal"></i>
+							Developer Sandbox</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div id="page-wrapper">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<h1 class="page-header">The Official U.S. Navy App</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div id="img" class="col-md-3">
+						<img src="TONA.png" class="img-rounded app-img" alt="" width="250"
+							height="250"><br>
+					</div>
+					<div class="col-md-5">
+						<div class="table-responsive">
+							<table class="table table-bordered table-hover table-striped">
+								<thead>
+									<tr>
+										<th>App Information</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><strong>Category:</strong> News</td>
+									</tr>
+									<tr>
+										<td><strong>Updated:</strong> May 25, 2014</td>
+									</tr>
+									<tr>
+										<td><strong>Current Version:</strong> 1.1.0</td>
+									</tr>
+									<tr>
+										<td><strong>Size:</strong>15M</td>
+									</tr>
+									<tr>
+										<td><strong>Operating System:</strong> Android 4.0 and Up</td>
+									</tr>
+									<tr>
+										<td><strong>Permissions:</strong> Identity, Contacts,
+											Photos/Media/Files,Storage</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<div class="row">
+									<div class="col-xs-3">
+										<i class="fa fa-comments fa-3x"></i>
+									</div>
+									<div class="col-xs-9 text-right">
+										<div class="huge">26</div>
+										<div>Reviews!</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<div class="row">
+									<div class="col-xs-3">
+										<i class="fa fa-download fa-3x"></i>
+									</div>
+									<div class="col-xs-9 text-right">
+										<div class="huge">124</div>
+										<div>Downloads!</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<div class="row">
+									<div class="col-xs-3">
+										<i class="fa fa-user fa-3x"></i>
+									</div>
+									<div class="col-xs-9 text-right">
+										<div class="huge">90</div>
+										<div>Active Users!</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="btn btn-md btn-primary pull-right"
+							data-toggle="modal" data-target="#version-modal">Version
+							Update</button>
+						<button type="button" class="btn btn-md btn-primary pull-right"
+							data-toggle="modal" data-target="#icon-modal">Icon
+							Update</button>
+						<button type="button" class="btn btn-md btn-primary pull-right"
+							data-toggle="modal" data-target="#description-modal">Edit
+							Description</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h4>Description</h4>
+							</div>
+							<div class="panel-body">
+								<p>The Navy Office of Information presents the "Official
+									U.S. Navy App" delivering up to date news and information for
+									the Sailor, their families and the general public. View and
+									then share stories, video and photos from around the fleet and
+									learn why America's Navy is a warfighting-ready force,
+									operating forward around the world.</p>
+								<p>Special features include: An interactive map to find key
+									Navy installations and museums, special events, and the forward
+									presence of our major carrier strike and amphibious ready
+									groups. View the Navy Plan of the Day for important changes in
+									pay and benefits, educational opportunities and uniforms, and
+									check out the calendar for important dates for exams, selection
+									boards, Navy outreach events, and more...</p>
+							</div>
+						</div>
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h4>
+									User Reviews <span class="pull-right"> <i
+										class="fa fa-star fa-fw"></i> <i class="fa fa-star fa-fw"></i>
+										<i class="fa fa-star fa-fw"></i> <i class="fa fa-star fa-fw"></i>
+										<i class="fa fa-star-half fa-fw"></i>
+									</span>
+								</h4>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-4">
+										<i class="fa fa-user fa-5x"></i> <strong>Chris
+											Nowicki</strong> September 26, 2014<br> <span> <i
+											class="fa fa-star fa-fw"></i> <i class="fa fa-star fa-fw"></i>
+											<i class="fa fa-star fa-fw"></i> <i class="fa fa-star fa-fw"></i>
+											<i class="fa fa-star fa-fw empty-star"></i>
+										</span>
+										<p>
+											<strong>Great informative app.</strong> I really love this
+											app, lots of up to date information on everything going on
+											with the navy. Lots of cool pictures and articles. The one
+											thing I wish they could do is do updates on specific
+											commands, like squadrons and ships. I do receive
+											notifications on any breaking news such as accidents or major
+											military operations. If you ever served in the navy you will
+											love this app.
+										</p>
+									</div>
+									<div class="col-md-4">
+										<i class="fa fa-user fa-5x"></i> <strong>Ken Walker</strong>
+										August 10, 2015<br> <span> <i
+											class="fa fa-star fa-fw"></i> <i class="fa fa-star fa-fw"></i>
+											<i class="fa fa-star fa-fw"></i> <i class="fa fa-star fa-fw"></i>
+											<i class="fa fa-star fa-fw"></i>
+										</span>
+										<p>
+											<strong>Navy Vet</strong> Still like to keep tabs on the what
+											the Navy's up to. This app makes it easy.
+										</p>
+									</div>
+									<div class="col-md-4">
+										<i class="fa fa-user fa-5x"></i> <strong>Stephen Day</strong>
+										October 5, 2015<br> <span> <i
+											class="fa fa-star fa-fw"></i> <i class="fa fa-star fa-fw"></i>
+											<i class="fa fa-star fa-fw empty-star"></i> <i
+											class="fa fa-star fa-fw empty-star"></i> <i
+											class="fa fa-star fa-fw empty-star"></i>
+										</span>
+										<p>
+											<strong>Automatically closes</strong> Great app when it
+											worked now it automatically closes before you can read
+											anything on the app
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4">
+										<i class="fa fa-user fa-5x"></i> <strong>Janet Dahle</strong>
+										May 27, 2014<br> <span> <i
+											class="fa fa-star fa-fw"></i> <i class="fa fa-star fa-fw"></i>
+											<i class="fa fa-star fa-fw"></i> <i class="fa fa-star fa-fw"></i>
+											<i class="fa fa-star fa-fw empty-star"></i>
+										</span>
+										<p>
+											<strong>Looks beautiful.</strong> Love the quick, easy
+											tutorial upon first use.
+										</p>
+									</div>
+									<div class="col-md-4">
+										<i class="fa fa-user fa-5x"></i> <strong>Kevin
+											Gardner</strong> May 26, 2014<br> <span> <i
+											class="fa fa-star fa-fw"></i> <i class="fa fa-star fa-fw"></i>
+											<i class="fa fa-star fa-fw"></i> <i class="fa fa-star fa-fw"></i>
+											<i class="fa fa-star fa-fw"></i>
+										</span>
+										<p>
+											<strong>Go Navy</strong> Retired EM1 ('81-'02). Love keeping
+											up to date. The Navy was the best time of my life.
+										</p>
+									</div>
+									<div class="col-md-4">
+										<i class="fa fa-user fa-5x"></i> <strong>Boone Herald</strong>
+										April 20, 2014<br> <span> <i
+											class="fa fa-star fa-fw"></i> <i class="fa fa-star fa-fw"></i>
+											<i class="fa fa-star fa-fw"></i> <i class="fa fa-star fa-fw"></i>
+											<i class="fa fa-star fa-fw empty-star"></i>
+										</span>
+										<p>
+											<strong>Alright app</strong> Don't really see how you can
+											customize it to what the user wants to see, it is nice to see
+											a free military app for the public though. Always room for
+											improvement, you guys and gals inspire me to always push
+											harder.
+										</p>
+									</div>
+								</div>
+							</div>
+							<a href="Comments.html">
+								<div class="panel-footer">
+									<span class="pull-left">View All Comments</span> <span
+										class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+									<div class="clearfix"></div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- Icon Modal -->
+				<div class="modal fade" id="icon-modal" tabindex="-1" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close btn btn-lg btn-primary"
+									data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<h3 class="modal-title">Upload App Icon</h3>
+							</div>
+							<div class="modal-body">
+								<form action="App.html" method="post">
+									<p>
+										Please specify a file:<br>
+									</p>
+									<input type="file" name="datafile" size="40"><br>
+									<button type="submit" class="btn btn-primary">Upload</button>
+									<button type="button" class="btn btn-primary"
+										data-dismiss="modal">Close</button>
+								</form>
+							</div>
+						</div>
+						<!-- /.modal-content -->
+					</div>
+					<!-- /.modal-dialog -->
+				</div>
+				<!-- /.modal -->
+				<!-- Description Modal -->
+				<div class="modal fade" id="description-modal" tabindex="-1"
+					role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close btn btn-lg btn-primary"
+									data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<h3 class="modal-title">Edit Description</h3>
+							</div>
+							<div class="modal-body">
+								<form action="App.html">
+									<div class="form-group">
+										<textarea class="form-control" rows="10" cols="50">
+The Navy Office of Information presents the "Official U.S. Navy App" delivering up to date news and information for the Sailor, their families and the general public. View and then share stories, video and photos from around the fleet and learn why America's Navy is a warfighting-ready force, operating forward around the world.
+Special features include: An interactive map to find key Navy installations and museums, special events, and the forward presence of our major carrier strike and amphibious ready groups. View the Navy Plan of the Day for important changes in pay and benefits, educational opportunities and uniforms, and check out the calendar for important dates for exams, selection boards, Navy outreach events, and more...
+												</textarea>
+									</div>
+									<button type="button" class="btn btn-primary">Edit</button>
+									<button type="button" class="btn btn-primary"
+										data-dismiss="modal">Close</button>
+								</form>
+							</div>
+						</div>
+						<!-- /.modal-content -->
+					</div>
+					<!-- /.modal-dialog -->
+				</div>
+				<!-- /.modal -->
+				<!-- Version Update Modal -->
+				<div class="modal fade" id="version-modal" tabindex="-1"
+					role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close btn btn-lg btn-primary"
+									data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<h3 class="modal-title">Version Update</h3>
+							</div>
+							<div class="modal-body">
+								<form action="App.html">
+									<div class="form-group">
+										<label for="version">Version Number:</label> <input
+											class="form-control" type="text" name="version" />
+									</div>
+									<div class="form-group">
+										<textarea class="form-control" rows="10" cols="50"
+											placeholder="Enter short description of changes to the app."></textarea>
+									</div>
+									<div class="form-group">
+										<p>
+											Please specify a file. or set of files:<br>
+										</p>
+										<input type="file" name="datafile" size="40"><br>
+									</div>
+									<button type="button" class="btn btn-primary">Update</button>
+									<button type="button" class="btn btn-primary"
+										data-dismiss="modal">Close</button>
+								</form>
+							</div>
+						</div>
+						<!-- /.modal-content -->
+					</div>
+					<!-- /.modal-dialog -->
+				</div>
+				<!-- /.modal -->
+				<!-- New Message Modal -->
+				<div class="modal fade modal-z" id="new-ms-modal" tabindex="-1"
+					role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close btn btn-lg btn-primary"
+									data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<h3 class="modal-title">New Message</h3>
+							</div>
+							<div class="modal-body">
+								<form action="App.html" method="post">
+									<div class="row">
+										<div class="form-group">
+											<div class="col-md-1">
+												<strong>From:</strong>
+											</div>
+											<div class="col-md-11">
+												<p>John Doe</p>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group">
+											<div class="col-md-1">
+												<label for="receiver">To:</label>
+											</div>
+											<div class="col-md-11">
+												<input class="form-control" type="text" name="receiver" />
+											</div>
+										</div>
+									</div>
+									<br>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group">
+												<textarea class="form-control" rows="4" cols="50"
+													placeholder="Enter message."></textarea>
+											</div>
+										</div>
+									</div>
+									<button type="submit" class="btn btn-primary">Send</button>
+									<button type="button" class="btn btn-primary"
+										data-dismiss="modal">Close</button>
+								</form>
+							</div>
+						</div>
+						<!-- /.modal-content -->
+					</div>
+					<!-- /.modal-dialog -->
+				</div>
+				<!-- /.modal -->
+			</div>
+		</div>
+	</div>
+	<!-- jQuery -->
+	<script src="js/jquery.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Morris Charts JavaScript -->
+	<script src="js/plugins/morris/raphael.min.js"></script>
+	<script src="js/plugins/morris/morris.min.js"></script>
+	<script src="js/plugins/morris/morris-data.js"></script>
+
+</body>
+<footer>
+	<div class="jumbotron jumbotron-footer">
+		<div class="row">
+			<div class="container">
+				<div class="col-md-3">
+					<ul>
+						<li><h3>Connect</h3></li>
+						<li><a href=""><i class="fa fa-github fa-fw"></i> Github</a></li>
+						<li><a href=""><i class="fa fa-facebook fa-fw"></i>
+								Facebook</a></li>
+						<li><a href=""><i class="fa fa-google-plus fa-fw"></i>
+								Google+</a></li>
+						<li><a href=""><i class="fa fa-twitter fa-fw"></i>
+								Twitter</a></li>
+						<li><a href=""><i class="fa fa-youtube fa-fw"></i>
+								Youtube</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul>
+						<li><h3>Programs</h3></li>
+						<li><a href="">GovAppStore Developer Groups</a></li>
+						<li><a href="">GovAppStore Developer Experts</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul>
+						<li><h3>Consoles</h3></li>
+						<li><a href="">GovAppStore App Store Console</a></li>
+						<li><a href="">GovAppStore Developer Console</a></li>
+						<li><a href="">GovAppStore Administrator Console</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul>
+						<li><h3>Explore</h3></li>
+						<li><a href=""><i class="fa fa-android fa-fw"></i>
+								Android</a></li>
+						<li><a href=""><i class="fa fa-apple fa-fw"></i> iOS</a></li>
+						<li><a href=""><i class="fa fa-globe fa-fw"></i> Web</a></li>
+						<li><a href=""><i class="fa fa-gamepad fa-fw"></i> All
+								Products</a></li>
+						<li><a href=""><i class="fa fa-group fa-fw"></i> Careers</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12 footer">
+			<a href="">Terms of Use</a> | <a href="">Privacy Policy</a>
+		</div>
+	</div>
+</footer>
+</html>

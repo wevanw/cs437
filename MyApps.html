@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>My Apps</title>
+
+<!-- Custom Fonts -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"
+	type="text/css">
+<link rel="stylesheet" href="css/appstore.css" type="text/css">
+<link href="css/sb-admin.css" rel="stylesheet">
+
+<style type="text/css" id="page-css">
+/* Styles specific to this particular page */
+.scroll-pane {
+	width: 100%;
+	height: 300px;
+	overflow: auto;
+}
+
+.horizontal-only {
+	height: auto;
+	max-height: 200px;
+}
+</style>
+
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script
+	src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<script type="text/javascript" id="sourcecode">
+	$(function() {
+		$('.scroll-pane').jScrollPane();
+	});
+</script>
+</head>
+<body>
+	<div id="wrapper">
+		<!-- Navbar -->
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<i class="fa fa-fighter-jet fa-3x fa-fw pull-left icon"></i> <a
+					class="navbar-brand pull-left" href="Dashboard.html"><span
+					class="text-primary .brand">GovAppStore</span>&nbsp;&nbsp;Developer
+					Console</a>
+			</div>
+
+			<!-- Message preview -->
+			<ul class="nav navbar-right top-nav">
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown"> <i class="fa fa-envelope"></i> <b
+						class="caret"></b>
+				</a>
+					<ul class="dropdown-menu message-dropdown">
+						<li class="message-preview"><a href="#">
+								<div class="media">
+									<span class="pull-left"> <img class="media-object"
+										src="http://placehold.it/50x50" alt=""></span>
+									<div class="media-body">
+										<h5 class="media-heading">
+											<strong>Admin</strong>
+										</h5>
+										<p class="small text-muted">
+											<i class="fa fa-clock-o"></i> Yesterday at 4:32 PM
+										</p>
+										<p>Lorem ipsum dolor sit amet, consectetur...</p>
+									</div>
+								</div>
+						</a></li>
+						<li class="message-preview"><a href="#">
+								<div class="media">
+									<span class="pull-left"> <img class="media-object"
+										src="http://placehold.it/50x50" alt=""></span>
+									<div class="media-body">
+										<h5 class="media-heading">
+											<strong>Admin</strong>
+										</h5>
+										<p class="small text-muted">
+											<i class="fa fa-clock-o"></i> Yesterday at 4:32 PM
+										</p>
+										<p>Lorem ipsum dolor sit amet, consectetur...</p>
+									</div>
+								</div>
+						</a></li>
+						<li class="message-preview"><a href="#">
+								<div class="media">
+									<span class="pull-left"> <img class="media-object"
+										src="http://placehold.it/50x50" alt=""></span>
+									<div class="media-body">
+										<h5 class="media-heading">
+											<strong>Admin</strong>
+										</h5>
+										<p class="small text-muted">
+											<i class="fa fa-clock-o"></i> Yesterday at 4:32 PM
+										</p>
+										<p>Lorem ipsum dolor sit amet, consectetur...</p>
+									</div>
+								</div>
+						</a></li>
+						<li class="message-footer"><a href="Messages.html">Read
+								All New Messages</a></li>
+						<li class="message-footer"><a href="" data-toggle="modal"
+							data-target="#new-ms-modal">Create Message</a></li>
+					</ul></li>
+
+				<!-- Name Dropdown -->
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown"><i class="fa fa-user"></i> John Doe <b
+						class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href=""><i
+								class="fa fa-fw fa-dashboard"></i> Profile</a></li>
+						<li><a href="Messages.html"><i
+								class="fa fa-fw fa-envelope"></i> Inbox</a></li>
+						<li><a href="Settings.html"><i class="fa fa-fw fa-gear"></i>
+								Settings</a></li>
+						<li class="divider"></li>
+						<li><a href="Login.html"><i class="fa fa-fw fa-power-off"></i>
+								LogOut</a></li>
+					</ul></li>
+			</ul>
+
+			<!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav side-nav">
+					<li><a href="Dashboard.html"><i
+							class="fa fa-fw fa-dashboard"></i> Dashboard</a></li>
+					<li class="active"><a href="MyApps.html"><i
+							class="fa fa-fw fa-tablet"></i> MyApps</a></li>
+					<li><a href="Forms.html"><i class="fa fa-fw fa-edit"></i>
+							Forms</a></li>
+					<li><a href=""><i class="fa fa-fw fa-terminal"></i>
+							Developer Sandbox</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- /.navbar-collapse -->
+		<div id="page-wrapper">
+			<div class="container-fluid">
+				<!--<div class="row">
+						<div class="col-lg-12">
+							<div class="alert alert-info alert-dismissable">
+								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+								<i class="fa fa-info-circle"></i> <strong>System will be down for maintanance!</strong>
+							</div>
+						</div>
+					</div>-->
+
+				<!-- Page Heading -->
+				<div class="row">
+					<div class="col-lg-12">
+						<ol class="breadcrumb">
+							<li class="active"><i class="fa fa-tablet"></i> My Apps</li>
+						</ol>
+						<h1 class="page-header">Apps</h1>
+						<form action="Login.html" method="post">
+							<div class="input-group">
+								<input type="search" class="form-control" placeholder="Search" />
+								<span class="input-group-addon"> <i class="fa fa-search"></i>
+								</span>
+							</div>
+							<input type="submit" class="search-btn" value="search"
+								name="search">
+						</form>
+					</div>
+				</div>
+
+				<div class="table-responsive">
+					<table id="apps" class="table table-bordered table-striped">
+						<thead>
+							<tr>
+								<th><a href="AlphaOrderApps.html">Name<i
+										class="fa fa-fw fa-caret-down"></i></a></th>
+								<th><a href="DateOrderApps.html">Date Submitted<i
+										class="fa fa-fw fa-caret-down"></i></a></th>
+								<th><a href="DownloadsOrderApps.html">Downloads<i
+										class="fa fa-fw fa-caret-down"></i></a></th>
+								<th><a href="StatusOrderApps.html">Status<i
+										class="fa fa-fw fa-caret-down"></i></a></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><a href="App.html">The Official U.S. Navy App</a></td>
+								<td>10/21/2013</td>
+								<td>124</td>
+								<td>Approved</td>
+							</tr>
+							<tr>
+								<td><a href="">App 3</a></td>
+								<td>11/21/2015</td>
+								<td>0</td>
+								<td>Pending</td>
+							</tr>
+							<tr>
+								<td><a href="">App 4</a></td>
+								<td>11/21/2015</td>
+								<td>0</td>
+								<td>Pending</td>
+							</tr>
+							<tr>
+								<td><a href="">App 5</a></td>
+								<td>11/21/2015</td>
+								<td>0</td>
+								<td>Pending</td>
+							</tr>
+							<tr>
+								<td><a href="">App 6</a></td>
+								<td>11/21/2015</td>
+								<td>0</td>
+								<td>Pending</td>
+							</tr>
+							<tr>
+								<td><a href="">App 7</a></td>
+								<td>11/21/2015</td>
+								<td>0</td>
+								<td>Pending</td>
+							</tr>
+							<tr>
+								<td><a href="">App 8</a></td>
+								<td>11/21/2015</td>
+								<td>0</td>
+								<td>Pending</td>
+							</tr>
+							<tr>
+								<td><a href="">App 9</a></td>
+								<td>11/21/2015</td>
+								<td>0</td>
+								<td>Pending</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p class="text-primary">Showing 8 of 8 apps</p>
+				<button type="button" class="btn btn-primary pull-right"
+					data-toggle="modal" data-target="#terms-modal">New App</button>
+				<!-- Terms and Conditions Modal -->
+				<div class="modal fade modal-z" id="terms-modal" tabindex="-1"
+					role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close btn btn-lg btn-primary"
+									data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<h3 class="modal-title">Terms and Conditions</h3>
+							</div>
+							<div class="modal-body">
+								<div class="scroll-pane">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Aenean nisi dui, vulputate a libero sed, pulvinar aliquet
+										libero. Pellentesque et tincidunt metus, vitae lobortis nisl.
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+										volutpat aliquam magna, at molestie eros venenatis congue.
+										Curabitur ornare finibus ante, at porta ante pulvinar vitae.
+										Fusce vitae posuere sapien, id interdum eros. Curabitur magna
+										nibh, ornare vitae finibus a, hendrerit ac mauris. Vestibulum
+										at ullamcorper libero, eget varius neque. Fusce eu auctor
+										ante. Integer ultricies ex velit, ac dapibus ex iaculis
+										bibendum. Donec mollis sed enim in dictum.</p>
+									<p>Suspendisse nunc arcu, dapibus non scelerisque eu,
+										sodales non mi. Nulla volutpat, dolor sed tempor pellentesque,
+										enim ex blandit nisl, at blandit leo ante vel turpis.
+										Pellentesque iaculis, metus vel lobortis fermentum, ante erat
+										pharetra lectus, vitae elementum risus ligula id elit.
+										Pellentesque dignissim in ex sed consectetur. Nam consequat
+										pretium lectus eget ullamcorper. Proin consequat quis nunc sit
+										amet consequat. Donec pellentesque turpis dolor, et dictum
+										massa lobortis eget. Etiam ut ultrices lacus. Class aptent
+										taciti sociosqu ad litora torquent per conubia nostra, per
+										inceptos himenaeos. Sed in mauris massa. In sit amet felis at
+										sem varius tempus efficitur in purus. Curabitur nec orci
+										pulvinar, condimentum orci et, elementum justo. Maecenas ut
+										varius elit, ac pharetra neque. Pellentesque sed ligula quis
+										velit feugiat tincidunt. Etiam ac elit suscipit odio ultrices
+										placerat nec id lacus.</p>
+									<p>Suspendisse fermentum pulvinar dolor, at sagittis arcu
+										euismod at. Vestibulum ante ipsum primis in faucibus orci
+										luctus et ultrices posuere cubilia Curae; Nam sit amet
+										vulputate ante. Nulla eget mollis odio, in gravida ligula. Sed
+										pharetra felis a quam dictum auctor. Aliquam non pretium mi.
+										Fusce tincidunt, felis posuere bibendum ultricies, eros tellus
+										finibus turpis, iaculis consectetur arcu sem quis erat.
+										Maecenas rutrum metus sed ligula lacinia, nec tincidunt sem
+										fringilla.</p>
+								</div>
+
+								<button type="button" class="btn btn-primary"
+									data-toggle="modal" data-dismiss="modal"
+									data-target="#new-app-modal">Accept</button>
+								<button type="button" class="btn btn-primary"
+									data-dismiss="modal">Decline</button>
+							</div>
+						</div>
+						<!-- /.modal-content -->
+					</div>
+					<!-- /.modal-dialog -->
+				</div>
+				<!-- /.modal -->
+				<!-- New App Modal -->
+				<div class="modal fade modal-z" id="new-app-modal" tabindex="-1"
+					role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close btn btn-lg btn-primary"
+									data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<h3 class="modal-title">Edit Description</h3>
+							</div>
+							<div class="modal-body">
+								<form action="MyApps.html" method="post">
+									<div class="scroll-pane">
+										<div class="form-group">
+											<label for="name">App Name:</label> <input
+												class="form-control" type="text" name="name" />
+										</div>
+										<div class="form-group">
+											<label for="category">Category:</label> <input
+												class="form-control" type="text" name="category" />
+										</div>
+										<div class="form-group">
+											<label for="version">Version:</label> <input
+												class="form-control" type="text" name="version" />
+										</div>
+										<div class="form-group">
+											<label for="compatibility">Compatibility:</label> <input
+												class="form-control" type="text" name="compatibility" />
+										</div>
+										<div class="form-group">
+											<label for="permissions">Permissions:</label> <input
+												class="form-control" type="text" name="permissions" />
+										</div>
+										<div class="form-group">
+											<textarea class="form-control" rows="4" cols="50"
+												placeholder="Enter a detailed description of the app."></textarea>
+										</div>
+										<div class="form-group">
+											<p>
+												Please specify a file, or group of files for the
+												app(including icon file):<br>
+											</p>
+											<input type="file" name="datafile" size="40"><br>
+										</div>
+									</div>
+									<button type="submit" class="btn btn-primary">Upload</button>
+									<button type="button" class="btn btn-primary"
+										data-dismiss="modal">Close</button>
+								</form>
+							</div>
+						</div>
+						<!-- /.modal-content -->
+					</div>
+					<!-- /.modal-dialog -->
+				</div>
+				<!-- /.modal -->
+				<!-- New Message Modal -->
+				<div class="modal fade modal-z" id="new-ms-modal" tabindex="-1"
+					role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close btn btn-lg btn-primary"
+									data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<h3 class="modal-title">New Message</h3>
+							</div>
+							<div class="modal-body">
+								<form action="MyApps.html" method="post">
+									<div class="row">
+										<div class="form-group">
+											<div class="col-md-1">
+												<strong>From:</strong>
+											</div>
+											<div class="col-md-11">
+												<p>John Doe</p>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group">
+											<div class="col-md-1">
+												<label for="receiver">To:</label>
+											</div>
+											<div class="col-md-11">
+												<input class="form-control" type="text" name="receiver" />
+											</div>
+										</div>
+									</div>
+									<br>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group">
+												<textarea class="form-control" rows="4" cols="50"
+													placeholder="Enter message."></textarea>
+											</div>
+										</div>
+									</div>
+									<button type="submit" class="btn btn-primary">Send</button>
+									<button type="button" class="btn btn-primary"
+										data-dismiss="modal">Close</button>
+								</form>
+							</div>
+						</div>
+						<!-- /.modal-content -->
+					</div>
+					<!-- /.modal-dialog -->
+				</div>
+				<!-- /.modal -->
+			</div>
+		</div>
+	</div>
+	<!-- jQuery -->
+	<script src="js/jquery.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Scroll Pane -->
+	<script src="js/jquery.jscrollpane.min.js"></script>
+	<script src="js/jquery.jscrollpane.js"></script>
+	<script src="js/mwheelIntent.js"></script>
+
+	<!-- Morris Charts JavaScript -->
+	<script src="js/plugins/morris/raphael.min.js"></script>
+	<script src="js/plugins/morris/morris.min.js"></script>
+	<script src="js/plugins/morris/morris-data.js"></script>
+</body>
+<footer>
+	<div class="jumbotron jumbotron-footer">
+		<div class="row">
+			<div class="container">
+				<div class="col-md-3">
+					<ul>
+						<li><h3>Connect</h3></li>
+						<li><a href=""><i class="fa fa-github fa-fw"></i> Github</a></li>
+						<li><a href=""><i class="fa fa-facebook fa-fw"></i>
+								Facebook</a></li>
+						<li><a href=""><i class="fa fa-google-plus fa-fw"></i>
+								Google+</a></li>
+						<li><a href=""><i class="fa fa-twitter fa-fw"></i>
+								Twitter</a></li>
+						<li><a href=""><i class="fa fa-youtube fa-fw"></i>
+								Youtube</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul>
+						<li><h3>Programs</h3></li>
+						<li><a href="">GovAppStore Developer Groups</a></li>
+						<li><a href="">GovAppStore Developer Experts</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul>
+						<li><h3>Consoles</h3></li>
+						<li><a href="">GovAppStore App Store Console</a></li>
+						<li><a href="">GovAppStore Developer Console</a></li>
+						<li><a href="">GovAppStore Administrator Console</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul>
+						<li><h3>Explore</h3></li>
+						<li><a href=""><i class="fa fa-android fa-fw"></i>
+								Android</a></li>
+						<li><a href=""><i class="fa fa-apple fa-fw"></i> iOS</a></li>
+						<li><a href=""><i class="fa fa-globe fa-fw"></i> Web</a></li>
+						<li><a href=""><i class="fa fa-gamepad fa-fw"></i> All
+								Products</a></li>
+						<li><a href=""><i class="fa fa-group fa-fw"></i> Careers</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12 footer">
+			<a href="">Terms of Use</a> | <a href="">Privacy Policy</a>
+		</div>
+	</div>
+</footer>
+</html>
